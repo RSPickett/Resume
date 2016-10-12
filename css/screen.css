@@ -1,36 +1,87 @@
 /* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-/* stylelint-disable */
-/* Keep reset CSS to one minified line */
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
-/* stylelint-enable */
+ v2.0 | 20110126
+ License: none (public domain)
+ */
+ /* stylelint-disable */
+ /* Keep reset CSS to one minified line */
+ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+ /* stylelint-enable */
 
-/* ==== BASE STYLES ==== */
+ /* ==== BASE STYLES ==== */
 
 /*
-  Setting type to major third (4:5) modular scale
-  http://www.modularscale.com/?14&&1.25&web&text
-  */
+Setting type to perfect fourth modular scale
+http://www.modularscale.com/?22&px&1.333&web&text
+*/
 html {
-  font-size: 1.375em; /* 22px */
-  line-height: 1.2em; /* 24px */
-  padding: 0.7647em 1.257em;
-
+  font-size: 1em; /* 16px */
+  line-height: 1.25em; /* 20px */
+  padding: 1.0em 1.0em;/*0.7647em 1.257em;*/
+  background-color: #FAF5F5;
+  color: #3D3D0D;
+  margin: 0 2.5% 0 5%;
 }
 
 h1 {
-  font-size: 1.571em; /* 21.875px (22px)*/
-  line-height: 1.55em; /* 34px @ 22px em*/
+  font-size: 2.375em; /* 38px */
+  line-height: 1.211em; /* 46px @ 38px em*/
+  /*background-color: lightblue*/
 }
 
 h2 {
-  font-size: 1.25em; /* 17.5px */
-  line-height: 1.943em; /* 34px @ 17.4px em */
+  font-size: 1.375em; /* 22px */
+  line-height: 1.182em; /* 35px @ 22px em */
+  padding-bottom: 1em;
+  /*background-color: lightblue*/
+}
+
+h3 {
+  font-size: 1.8125em; /* 29px */
+  line-height: 1.207em; /* 35px @ 29px em */
 }
 
 p,
 ul {
-  padding-bottom: 1.214em; /* 17px */
+  padding-bottom: 1.0em; /* 17px */
+}
+
+/* ===== MODULAR STYLES ===== */
+
+.content ul {
+  list-style-type: disc;
+}
+
+/* ==== State Styles ==== */
+/* 650 @ 16px/em */
+@media screen and (min-width: 40.625em) {
+  #page {
+    font-size: 1.312em; /* 21px */
+    line-height: 1.227em; /* 27px */
+    margin: 0 5% 0 5%;
+
+  }
+
+/* 700 @ 16px/em */
+@media screen and (min-width: 43.75em) {
+  #page {
+    /*font-size: 1.375em; *//* 22px */
+    /*line-height: 1.182em *//* 26px */
+    margin: 0 15% 0 5%;
+  }
+
+/* 750 @ 16px/em */
+@media screen and (min-width: 46.875em) {
+  #page {
+    /*font-size: 1.375em; *//* 22px */
+    /*line-height: 1.182em *//* 26px */
+    margin: 0 15% 0 5%;
+  }
+
+/* 980 @ 16px/em */
+@media screen and (min-width: 61.25em) {
+  #page {
+    /*font-size: 1.375em; *//* 22px */
+    /*line-height: 1.182em *//* 26px */
+    margin: 0 20% 0 5%;
+  }
 }
