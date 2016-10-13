@@ -17,7 +17,7 @@ html {
   font-size: 1em; /* 16px */
   line-height: 1.25em; /* 20px */
   padding: 1.0em 1.0em;/*0.7647em 1.257em;*/
-  background-color: #FAF5F5;
+  background-color: #faebd7;
   color: #3D3D0D;
   margin: 0 2.5% 0 5%;
 }
@@ -25,7 +25,6 @@ html {
 h1 {
   font-size: 2.375em; /* 38px */
   line-height: 1.211em; /* 46px @ 38px em*/
-  /*background-color: lightblue*/
 }
 
 h2 {
@@ -49,6 +48,25 @@ ul {
 
 .content ul {
   list-style-type: disc;
+}
+
+.technical dl {
+  padding: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.technical dt {
+  float: left;
+  width: 25%;
+  padding: 0;
+  margin: 0;
+}
+
+.technical dd {
+  float: left;
+  width: 75%;
+
 }
 
 /* ==== State Styles ==== */
