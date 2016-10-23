@@ -118,79 +118,30 @@ ul {
     @media screen and (min-width: 43.75em) {
       #page {
     font-size: 1.375em; /* 22px
-    /*line-height: 1.182em *//* 26px */
     margin: 0 15% 0 5%;
   }
   /* +++ resume specific +++ */
   .h-resume {
     font-size: 1em;
-    /*line-height: 1.20em;*/
   }
-  .technical dt {
-    /*float: left;*/
-    /*width: 25%;*/
-    /*clear: left;*/
-    /*margin: 1em;*/
-  }
-  .technical dd {
-    /*float: left;*/
-    /*width: 75%;*/
-  }
-
 }
 
 /* 750 @ 16px/em */
 @media screen and (min-width: 46.875em) {
   #page {
-    /*font-size: 1.375em; *//* 22px */
-    /*line-height: 1.182em *//* 26px */
     margin: 0 15% 0 5%;
   }
 }
 
-/* 895 @ 16px/em = 55.9375em */
-/*@media screen and (min-width: 55.9375em){
-  .technical dd {
-    float: left;
-    width: 65%;
-    padding-bottom: 0;
-  }
-  .technical dt {
-    float: left;
-    width: 35%;
-    padding-bottom: 0;
-  }
-}*/
-
-
-
-  /* 950 @ 16px/em */
-  @media screen and (min-width: 59.375em)
-  {
-
-
-
-  }
-
   /* 980 @ 16px/em */
   @media screen and (min-width: 61.25em) {
     #page {
-      /*font-size: 1.375em; *//* 22px */
-      /*line-height: 1.182em *//* 26px */
       margin: 0 20% 0 5%;
     }
   }
 
   /* 1100 @ 16px/em */
   @media screen and (min-width: 68.75em) {
-/*    .technical dd {
-      float: left;
-      width: 80%;
-    }*/
-/*    .technical dt {
-      width: 20%;
-      float: left;
-    }*/
     .technical li {
       display: inline;
     }
