@@ -7,7 +7,7 @@
  a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
  /* stylelint-enable */
 
-/* ==== BASE STYLES ==== */
+ /* ==== BASE STYLES ==== */
 
 /*
 Setting type to perfect fourth modular scale
@@ -50,43 +50,93 @@ ul {
   list-style-type: disc;
 }
 
-.technical dl {
-  padding: 0;
-  width: 100%;
-  margin: 0;
+
+/* +++ resume specific +++ */
+.h-resume {
+  font-size: .875em; /* 14px */  /* I think this should reset entire resume page
+  while the proportions remain the same */
+  line-height: 1.2143em /* 17px */
 }
 
-.technical dt {
-  float: left;
-  width: 25%;
-  padding: 0;
-  margin: 0;
-}
+/* so new sizes:
+        font              line height
+    h1: 33.35px (34)      41px
+    h2: 19.25px (20)      24px
+    h3: 25.375px (26)     32px
+    */
 
-.technical dd {
-  float: left;
-  width: 75%;
+    .p-summary {
+      margin: 1em;
+    }
 
-}
+    .technical {
+      padding: 0;
+      margin: 0;
+    }
+    .technical dl {
+      padding: 0;
+      width: 100%;
+    }
 
-/* ==== State Styles ==== */
-/* 650 @ 16px/em */
-@media screen and (min-width: 40.625em) {
-  #page {
-    font-size: 1.312em; /* 21px */
-    line-height: 1.227em; /* 27px */
-    margin: 0 5% 0 5%;
+    .technical dt {
+      float: left;
+      width: 384em;
+    }
 
-  }
-}
+    .technical dd {
+      /*width: 80%;*/
+      clear: left;
+      margin: 1em;
+      padding: 0;
+    }
 
-/* 700 @ 16px/em */
-@media screen and (min-width: 43.75em) {
-  #page {
-    /*font-size: 1.375em; *//* 22px */
+    .technical li {
+      list-style-type: '- ';
+    }
+
+    .technical ul:last-of-type {
+      padding-bottom: 0;
+    }
+
+    .p-experience {
+      clear:both;
+    }
+
+    /* +++ End resume specific +++ */
+
+    /* ==== State Styles ==== */
+    /* 650 @ 16px/em */
+    @media screen and (min-width: 40.625em) {
+      #page {
+        font-size: 1.312em; /* 21px */
+        line-height: 1.227em; /* 27px */
+        margin: 0 5% 0 5%;
+      }
+    }
+
+    /* 700 @ 16px/em */
+    @media screen and (min-width: 43.75em) {
+      #page {
+    font-size: 1.375em; /* 22px
     /*line-height: 1.182em *//* 26px */
     margin: 0 15% 0 5%;
   }
+  /* +++ resume specific +++ */
+  .h-resume {
+    font-size: 1em;
+    /*line-height: 1.20em;*/
+  }
+  .technical dt {
+    /*float: left;*/
+    /*width: 25%;*/
+    /*clear: left;*/
+    /*margin: 1em;*/
+  }
+  .technical dd {
+    /*float: left;*/
+    /*width: 75%;*/
+  }
+
 }
 
 /* 750 @ 16px/em */
@@ -98,11 +148,59 @@ ul {
   }
 }
 
-/* 980 @ 16px/em */
-@media screen and (min-width: 61.25em) {
-  #page {
-    /*font-size: 1.375em; *//* 22px */
-    /*line-height: 1.182em *//* 26px */
-    margin: 0 20% 0 5%;
+/* 895 @ 16px/em = 55.9375em */
+/*@media screen and (min-width: 55.9375em){
+  .technical dd {
+    float: left;
+    width: 65%;
+    padding-bottom: 0;
   }
-}
+  .technical dt {
+    float: left;
+    width: 35%;
+    padding-bottom: 0;
+  }
+}*/
+
+
+
+  /* 950 @ 16px/em */
+  @media screen and (min-width: 59.375em)
+  {
+
+
+
+  }
+
+  /* 980 @ 16px/em */
+  @media screen and (min-width: 61.25em) {
+    #page {
+      /*font-size: 1.375em; *//* 22px */
+      /*line-height: 1.182em *//* 26px */
+      margin: 0 20% 0 5%;
+    }
+  }
+
+  /* 1100 @ 16px/em */
+  @media screen and (min-width: 68.75em) {
+/*    .technical dd {
+      float: left;
+      width: 80%;
+    }*/
+/*    .technical dt {
+      width: 20%;
+      float: left;
+    }*/
+    .technical li {
+      display: inline;
+    }
+    .technical li:after {
+      content: ", ";
+    }
+    .technical li:last-of-type:after {
+      content: none;
+    }
+    .p-experience {
+      clear: both;
+    }
+  }
