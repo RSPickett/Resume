@@ -65,8 +65,56 @@ ul {
     h3: 25.375px (26)     32px
     */
 
-    .p-summary {
-      margin: 1em;
+    .u-email {
+      float: left;
+      padding-right: 1em;
+    }
+
+    h2 h3 {
+      padding-bottom: 0.5em;
+    }
+    .qualifications li {
+      margin-left: 1em;
+    }
+
+    .client li{
+      margin-left: 1em;
+    }
+    .client-experience h2 {
+      padding-bottom: 0.5em;
+    }
+    .employer h3 {
+      font-size: 1.285em;
+    }
+    .employer h4{
+       font-style: italic;
+    }
+    .employer h2 {
+      padding-bottom: 0.5em;
+    }
+
+    .iowa {
+      padding-bottom: 0;
+    }
+    .education h2 {
+      padding-bottom: .5em;
+    }
+    .education li {
+      padding-bottom: 0;
+      list-style-type: none;
+      display: inline;
+    }
+    .education li:after {
+      content: ", ";
+    }
+    .education li:last-of-type:after {
+      content: ".";
+    }
+    }
+
+    .client-experience h3 {
+      font-size: .56em;
+      float: left;
     }
 
     .technical {
