@@ -28,8 +28,8 @@ h1 {
 }
 
 h2 {
-  font-size: 1em; /* 20px */
-  line-height: 1.95em; /* 39px @ 20px em */
+  font-size: .8em; /* 16px */
+  line-height: 1.1875em; /* 19px @ 16px em */
   padding-bottom: 1em;
 }
 
