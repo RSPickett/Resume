@@ -28,14 +28,13 @@ h1 {
 }
 
 h2 {
-  font-size: 1.375em; /* 22px */
-  line-height: 1.182em; /* 35px @ 22px em */
+  font-size: 1em; /* 20px */
+  line-height: 1.8em; /* 36px @ 20px em */
   padding-bottom: 1em;
-  /*background-color: lightblue*/
 }
 
 h3 {
-  font-size: 1.8125em; /* 29px */
+  font-size: 1.5em; /* 30px */
   line-height: 1.207em; /* 35px @ 29px em */
 }
 
