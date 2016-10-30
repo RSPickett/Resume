@@ -10,12 +10,12 @@
  /* ==== BASE STYLES ==== */
 
 /*
-Setting type to perfect fourth modular scale
-http://www.modularscale.com/?22&px&1.333&web&text
+Setting type to major third modular scale
+http://www.modularscale.com/?20&px&1.25&web&text
 */
 html {
-  font-size: 1em; /* 16px */
-  line-height: 1.25em; /* 20px */
+  font-size: 1em; /* 20px */
+  line-height: 1.2em; /* 24px */
   padding: 1em 1em;/*0.7647em 1.257em;*/
   background-color: #faebd7;
   color: #3D3D0D;
@@ -23,8 +23,8 @@ html {
 }
 
 h1 {
-  font-size: 2.375em; /* 38px */
-  line-height: 1.211em; /* 46px @ 38px em*/
+  font-size: 2.45em; /* 49px */
+  line-height: 1.2245em; /* 59px @ 49px em*/
 }
 
 h2 {
