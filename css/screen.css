@@ -40,7 +40,7 @@ h3 {
 
 p,
 ul {
-  padding-bottom: 1em; /* 17px */
+  padding-bottom: 1em; /* 20px */
 }
 
 img,video {
@@ -157,8 +157,8 @@ img,video {
 /* +++ End resume specific +++ */
 
 /* ==== State Styles ==== */
-/* 650 @ 16px/em */
-@media screen and (min-width: 40.625em) {
+/* 600 @ 16px/em */
+@media screen and (min-width: 30em) {
   #page {
     font-size: 1.312em; /* 21px */
     line-height: 1.227em; /* 27px */
