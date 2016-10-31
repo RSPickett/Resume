@@ -7,7 +7,7 @@
  a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
  /* stylelint-enable */
 
- /* ==== BASE STYLES ==== */
+/* ==== BASE STYLES ==== */
 
 /*
 Setting type to major third modular scale
@@ -28,7 +28,7 @@ h1 {
 }
 
 h2 {
-  font-size: .8em; /* 16px */
+  font-size: 0.8em; /* 16px */
   line-height: 1.1875em; /* 19px @ 16px em */
   padding-bottom: 1em;
 }
@@ -40,12 +40,12 @@ h3 {
 
 p,
 ul {
-  font-size: .8em; /* 16px */
+  font-size: 0.8em; /* 16px */
   line-height: 1.1875em; /* 19px */
   padding-bottom: 1em; /* 16px */
 }
 
-img,video {
+img, video {
   display: block;
   max-width: 100%;
 }
@@ -60,7 +60,157 @@ img,video {
   list-style-type: disc;
 }
 
+/* +++ resume specific +++ */
+
+.p-name {
+  font-weight: bold;
+}
+
+.p-summary h3 {
+  font-weight: bold;
+}
+
+.u-email {
+  float: left;
+  padding-right: 1em;
+}
+
+.qualifications li {
+  margin-left: 1em;
+}
+
+.client li {
+  margin-left: 1em;
+}
+.client-experience h2 {
+  padding-bottom: 0.5em;
+}
+.employer h3 {
+  font-size: 1.285em;
+}
+.employer h4 {
+  font-style: italic;
+}
+.employer h2 {
+  padding-bottom: 0.5em;
+}
+
+.h-resume h2 h3 {
+  font-weight: bold;
+  font-size: 2.25em; /* 25px */
+}
+
+.iowa {
+  padding-bottom: 0;
+}
+.education h2 {
+  padding-bottom: 0.5em;
+}
+.education li {
+  padding-bottom: 0;
+  list-style-type: none;
+  display: inline;
+}
+.education li:after {
+  content: ", ";
+}
+.education li:last-of-type:after {
+  content: ".";
+}
+.technical {
+  padding: 0;
+  margin: 0;
+}
+.technical dl {
+  padding: 0;
+  width: 100%;
+}
+
+.technical dt {
+  float: left;
+  width: 384em;
+}
+
+.technical dd {
+  clear: left;
+  margin: 1em;
+  padding: 0;
+}
+
+.technical li {
+  list-style-type: "- ";
+}
+
+.technical ul:last-of-type {
+  padding-bottom: 0;
+}
+
+.technical h2 {
+  font-weight: bold;
+  font-size: 1.25em; /* 25px */
+  padding-bottom: 0;
+}
+
+.p-experience h2 {
+  font-weight: bold;
+  padding-bottom: 0;
+  font-size: 1.05em; /* 21px */
+}
+
+.p-experience h5 {
+  font-weight: bold;
+  font-size: 1.25em; /* 25px */
+  padding-bottom: 0.5em;
+}
+
+/* +++ resume specific end +++ */
+
+/* +++ Keweenaw specific +++ */
+
+.location h2 {
+  font-weight: bold;
+  padding-top: 2em;
+  padding-bottom: 0;
+}
+/*.location p {
+  margin-right: 1em;
+}*/
+.map {
+  float: right;
+  padding: 0;
+  padding-left: -1em;
+  /*padding-left: .25em;*/
+}
+.scenery {
+  clear: both;
+}
+/* +++ Keweenaw specific end +++ */
+
 /* ==== State Styles ==== */
 
+/* 700 @ 20px/em (35em) */
+@media screen and (min-width: 35em) {
+  .location p {
+    margin-right: 1em;
+  }
+/*  .map {
+    padding-left: 1em;
+  }*/
+}
 
+/* 1100 @ 20px/em (55em)*/
+@media screen and (min-width: 55em) {
+  .technical li {
+    display: inline;
+  }
+  .technical li:after {
+    content: ", ";
+  }
+  .technical li:last-of-type:after {
+    content: none;
+  }
+  .p-experience {
+    clear: both;
+  }
+}
 
