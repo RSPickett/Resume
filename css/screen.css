@@ -50,6 +50,11 @@ img, video {
   max-width: 100%;
 }
 
+nav li {
+  display: inline;
+  font-size: .75em
+}
+
 #page {
   max-width: 30em; /* 700px @ 20px/em */
 }
