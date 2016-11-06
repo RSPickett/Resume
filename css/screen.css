@@ -52,7 +52,7 @@ img, video {
 
 nav li {
   display: inline;
-  font-size: .75em
+  font-size: 0.75em;
 }
 
 #page {
@@ -198,9 +198,6 @@ nav li {
   .location p {
     margin-right: 1em;
   }
-/*  .map {
-    padding-left: 1em;
-  }*/
 }
 
 /* 1100 @ 20px/em (55em)*/
