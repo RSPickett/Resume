@@ -186,8 +186,8 @@ nav li {
 
 /* ==== State Styles ==== */
 
-/* 390 @ 20px/em (19.5em) */
-@media screen and (min-width: 19.5em) {
+/* 385 @ 20px/em (19.25em) */
+@media screen and (min-width: 19.25em) {
   .u-email {
     float: left;
     padding-right: 1em;
@@ -201,8 +201,11 @@ nav li {
   }
 }
 
+/* 800 @ 20px/em (40em) */
 @media screen and (min-width: 40em) {
   .h-resume #page {
+  font-size: 1.125em; /* 22.5px */
+  line-height: 1.2em; /* 27px */
   max-width: 45em; /* 900px @ 20px/em */
 }
 }
