@@ -16,7 +16,7 @@ http://www.modularscale.com/?20&px&1.25&web&text
 html {
   font-size: 1.25em; /* 20px */
   line-height: 1.2em; /* 24px */
-  padding: 1em 1em;/*0.7647em 1.257em;???*/
+  padding: 1em 1em;/* 20px 20px */
   background-color: #faebd7;
   color: #3D3D0D;
   margin: 0 2.5% 0 5%;
@@ -52,7 +52,7 @@ img, video {
 
 nav li {
   display: inline;
-  font-size: 0.75em;
+  font-size: 0.75em; /* 15px */
 }
 
 #page {
@@ -75,17 +75,12 @@ nav li {
   font-weight: bold;
 }
 
-.u-email {
-  float: left;
-  padding-right: 1em;
-}
-
 .qualifications li {
-  margin-left: 1em;
+  margin-left: 1em; /* 20px */
 }
 
 .client li {
-  margin-left: 1em;
+  margin-left: 1em;  /* 20px */
 }
 .client-experience h2 {
   padding-bottom: 0.5em;
@@ -109,7 +104,7 @@ nav li {
   padding-bottom: 0;
 }
 .education h2 {
-  padding-bottom: 0.5em;
+  padding-bottom: 0.5em; /* 10px */
 }
 .education li {
   padding-bottom: 0;
@@ -133,12 +128,12 @@ nav li {
 
 .technical dt {
   float: left;
-  width: 384em;
+  width: 384em; /* 19.2px (keep the text from folding) */
 }
 
 .technical dd {
   clear: left;
-  margin: 1em;
+  margin: 1em;  /* 20px */
   padding: 0;
 }
 
@@ -165,7 +160,7 @@ nav li {
 .p-experience h5 {
   font-weight: bold;
   font-size: 1.25em; /* 25px */
-  padding-bottom: 0.5em;
+  padding-bottom: 0.5em; /* 10px */
 }
 
 /* +++ resume specific end +++ */
@@ -174,12 +169,10 @@ nav li {
 
 .location h2 {
   font-weight: bold;
-  padding-top: 2em;
+  padding-top: 2em; /* 40px */
   padding-bottom: 0;
 }
-/*.location p {
-  margin-right: 1em;
-}*/
+
 .map {
   float: right;
   padding: 0;
@@ -193,12 +186,28 @@ nav li {
 
 /* ==== State Styles ==== */
 
+/* 390 @ 20px/em (19.5em) */
+@media screen and (min-width: 19.5em) {
+  .u-email {
+    float: left;
+    padding-right: 1em;
+  }
+}
+
 /* 700 @ 20px/em (35em) */
 @media screen and (min-width: 35em) {
   .location p {
     margin-right: 1em;
   }
 }
+
+@media screen and (min-width: 40em) {
+  .h-resume #page {
+  max-width: 45em; /* 900px @ 20px/em */
+}
+}
+
+
 
 /* 1100 @ 20px/em (55em)*/
 @media screen and (min-width: 55em) {
