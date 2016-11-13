@@ -201,13 +201,11 @@ nav li {
   }
 }
 
-/* 800 @ 20px/em (40em) */
-@media screen and (min-width: 40em) {
+/* 1000 @ 20px/em (50em) */
+@media screen and (min-width: 50em) {
   .h-resume #page {
-  font-size: 1.125em; /* 22.5px */
-  line-height: 1.2em; /* 27px */
-  max-width: 45em; /* 900px @ 20px/em */
-}
+    max-width: 40em; /* 800px @ 20px/em */
+  }
 }
 
 
