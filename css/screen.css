@@ -60,6 +60,8 @@ nav li {
 }
 
 .keweenaw {
+  /* font-size: 1.25em;  20px */
+  /* line-height: 1.2em;  24px */
   max-width: 50em; /* 1000px @ 20px/em */
 }
 /* ===== MODULAR STYLES ===== */
@@ -182,6 +184,7 @@ nav li {
   padding-bottom: 0;
 }
 
+
 .geology h2 {
   font-weight: bold;
   padding-top: 2em; /* 40px */
@@ -189,7 +192,11 @@ nav li {
   /*clear: both;*/
 }
 
-
+.history h2 {
+  font-weight: bold;
+  padding-top: 2em; /* 40px */
+  padding-bottom: 0;
+}
 .caption h3 {
   font-size: .75em;
   line-height: 1.2em;
@@ -197,6 +204,24 @@ nav li {
   padding-top: .5em;
   padding-bottom: .5em;
 }
+
+.recreation h2{
+  font-weight: bold;
+  padding-top: 2em; /* 40px */
+  padding-bottom: 0;
+}
+
+.geology {
+  clear: both;
+}
+
+.scenery {
+  clear: both;
+}
+
+/*.scenery {
+  clear: both;
+}*/
   /* +++ Keweenaw specific end +++ */
 
   /* ==== State Styles ==== */
@@ -207,34 +232,44 @@ nav li {
     .map {
       float: right;
       padding-left: 1em;
+      width: 50%;
     }
   }
 
-  /* 500 @ 20px/em (25em) */
-  @media screen and (min-width: 25em) {
+  /* 500 @ 16px/em (25em) */
+  @media screen and (min-width: 31.25em) {
     .u-email {
       float: left;
       padding-right: 1em;
     }
 
-    .sunrise {
+    .mclain {
       float: left;
-      width: 35%;
+      width: 45%;
       padding: 0;
       padding-left: -1em;
       padding-right: 1em;
     }
 
-    .video {
+    .dunes {
       float: right;
-      width: 35%;
-      /*padding: 0;*/
+      width: 45%;
       padding-left: 1em;
-      /*padding-right: 1em;*/
     }
   }
 
-  /* 700 @ 20px/em (35em) */
+  /* 610 @ 16px/em (38.125em) */
+  @media screen and (min-width: 37.5){
+
+    .location {
+      clear: all;
+    }
+    .map {
+      clear: all;
+    }
+  }
+
+  /* 700 @ 16px/em (35em) */
   @media screen and (min-width: 35em) {
     .location p {
       margin-right: 1em;
@@ -247,8 +282,6 @@ nav li {
       max-width: 40em; /* 800px @ 20px/em */
     }
   }
-
-
 
   /* 1100 @ 20px/em (55em)*/
   @media screen and (min-width: 55em) {
