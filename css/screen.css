@@ -59,6 +59,9 @@ nav li {
   max-width: 30em; /* 700px @ 20px/em */
 }
 
+.keweenaw {
+  max-width: 50em; /* 1000px @ 20px/em */
+}
 /* ===== MODULAR STYLES ===== */
 
 .content ul {
@@ -173,21 +176,57 @@ nav li {
   padding-bottom: 0;
 }
 
-.map {
-  float: right;
+.scenery h2 {
+  font-weight: bold;
+  padding-top: 2em; /* 40px */
+  padding-bottom: 0;
+}
+
+
+.caption h3 {
+  font-size: .75em;
+  line-height: 1.2em;
+  color: darkred;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+/*.scenery {
+  clear: both;
+}*/
+
+.sunrise {
+  float: left;
+  width: 25%;
   padding: 0;
   padding-left: -1em;
-  /*padding-left: .25em;*/
+  padding-right: 1em;
 }
-.scenery {
-  clear: both;
+
+.video {
+  /*float: right;*/
+  /*width: 20%;*/
 }
+
+.dunes {
+  float: right;
+  width: 25%;
+}
+
 /* +++ Keweenaw specific end +++ */
 
 /* ==== State Styles ==== */
 
-/* 385 @ 20px/em (19.25em) */
-@media screen and (min-width: 19.25em) {
+/* 450 @ 16px/em (28.125em) */
+@media screen and (min-width: 28.125em)
+{
+  .map {
+    float: right;
+    padding-left: 1em;
+  }
+}
+
+/* 500 @ 20px/em (25em) */
+@media screen and (min-width: 25em) {
   .u-email {
     float: left;
     padding-right: 1em;
