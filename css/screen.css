@@ -56,7 +56,7 @@ nav li {
 }
 
 #page {
-  max-width: 30em; /* 700px @ 20px/em */
+  max-width: 30em; /* 480px @ 16px/em */
 }
 
 .keweenaw {
@@ -270,10 +270,17 @@ nav li {
   }
 }
 
-/* 1000 @ 20px/em (50em) */
+/* 850 @ 16px/em (50em) */
 @media screen and (min-width: 50em) {
   .h-resume #page {
-    max-width: 40em; /* 800px @ 20px/em */
+    max-width: 33.75em; /* 540px @ 16px/em */
+  }
+}
+
+/* 1000 @ 16px/em (62.5em) */
+@media screen and (min-width: 62.5em) {
+  .h-resume #page {
+    max-width: 37.5em; /* 600px @ 16px/em */
   }
 }
 
